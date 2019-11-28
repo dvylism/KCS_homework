@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS9</title>
+    <style>
+        body {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            background: #f7f7ed;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .kompiuterio-paveiksliukas {
+            margin: 20px;
+        }
+        .flex-container .asus, .lenovo, .dell {
+            background: white;
+            width: 250px;
+            margin: 5px;
+        }
+        .asus:hover {
+            border-right: 3px solid lightblue;
+            border-bottom: 3px solid lightblue;
+            border-radius : 4px;
+        }
+        .kompiuterio-pavadinimas {
+            color: rgb(123, 147, 169);
+            font-size: 18px;
+            margin-left: 20px;
+            margin-bottom: 0;
+        }
+        .papildoma-informacija{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 170px;
+            margin-left: 20px;
+        }
+    /*    Paragrafu suliejimas be br tago kur reikia panaudot overflow per dvi eilutes    */
+        .atmintines-info {
+            margin-bottom: 0;
+        }
+        .istrizaines-info {
+            margin-top: 0;
+        }
+    /*    ---------------------    */
+        .kaina {
+            font-size: 24px;
+            margin: 0 20px;
+        }
+        .sena-kaina {
+            text-decoration: line-through;
+            color: rgb(143, 142, 139);
+            margin: 0 20px;
+        }
+        .uzsakyti-mygtukas {
+            background: rgb(156, 222, 65);
+            color: white;
+            border: 0;
+            border-radius: 2px;
+            height: 48px;
+            margin: 0 20px;
+            font-size: 28px;
+            font-family: "Open Sans";
+            text-align: center;
+        }
+        .kompensacinis-atlyginimas {
+            color: #939359;
+            font-size: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="asus">
+            <p class="kompiuterio-paveiksliukas"><img src="images/css_9_computers_1.jpg" alt="asus kompas"></p>
+            <h2 class="kompiuterio-pavadinimas">Nešiojamas<br> kompiuteris ASUS<br> K540NA</h2>
+            <p class="papildoma-informacija">Atmintinė (RAM) (GB): <b>4</b><br>Įstrižainė: <b>15,6" (39.6coliai</b></p>
+            <p class="kaina">259,00 &euro;</p>
+            <p class="sena-kaina">359,00 &euro;</p>
+            <button class="uzsakyti-mygtukas">Užsakyti</button>
+            <p class="kompensacinis-atlyginimas">&#43; 7,01 &euro; Kompensacinis<br>atlyginimas autoriams</p>
+        </div>
+        <div class="lenovo">
+            <p class="kompiuterio-paveiksliukas"><img src="images/css_9_computers_3.jpg" alt="lenovo kompas"></p>
+            <h2 class="kompiuterio-pavadinimas">Nešiojamas<br> kompiuteris LENOVO<br> V110-15IAP</h2>
+            <p class="papildoma-informacija atmintines-info">Atmintinė (RAM) (GB): 16</p>
+            <p class="papildoma-informacija istrizaines-info">Įstrižainė: <b>15,6" (&#126;39.6coliai</b></p>
+            <p class="kaina">199,99 &euro;</p>
+            <p class="sena-kaina">349,99 &euro;</p>
+            <button class="uzsakyti-mygtukas">Užsakyti</button>
+            <p class="kompensacinis-atlyginimas">&#43; 7,01 &euro; Kompensacinis<br>atlyginimas autoriams</p>
+        </div>
+        <div class="dell">
+            <p class="kompiuterio-paveiksliukas"><img src="images/css_9_computers_2.jpg" alt="dell kompas"></p>
+            <h2 class="kompiuterio-pavadinimas">Nešiojamas<br> kompiuteris DELL<br> INSPIRON 15 3573</h2>
+            <p class="papildoma-informacija atmintines-info">Atmintinė (RAM) (GB): 16</p>
+            <p class="papildoma-informacija istrizaines-info">Įstrižainė: <b>15,6" (&#126;39.6coliai</b></p>
+            <p class="kaina">299,00 &euro;</p>
+            <p class="sena-kaina">399,00 &euro;</p>
+            <button class="uzsakyti-mygtukas">Užsakyti</button>
+            <p class="kompensacinis-atlyginimas">&#43; 7,01 &euro; Kompensacinis<br>atlyginimas autoriams</p>
+        </div>
+    </div>
+</body>
+</html>
