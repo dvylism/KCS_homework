@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS4</title>
+</head>
+<body>
+    <button onclick='showResult();'>Call Division Function</button>
+    <script>
+    var firstNumber = 10;
+    var secondNumber = 2;
+    var result = 0;
+    function twoNumbersDivision () {
+        return firstNumber/secondNumber;
+    }
+    function showResult () {
+        result = twoNumbersDivision();
+        alert('The division of ' + firstNumber + '/' + secondNumber + ' is = ' + result);
+    }
+    </script>
+</body>
+</html>
