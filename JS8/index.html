@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS8</title>
+</head>
+<body>
+    <script>
+        var names = ['Jonas', 'Petras', 'Martynas', 'Ona', 'Urtė', 'Ema'];
+        var nameToDrop;
+
+        function removeName() {
+            nameToDrop = (names.indexOf('Martynas'));
+            names.splice(nameToDrop, 1);
+            console.log(names);
+        }
+        removeName();
+    </script>
+</body>
+</html>
